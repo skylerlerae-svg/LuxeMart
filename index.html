@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LuxeMart — Luxury Made Simple</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Intro / Hero -->
+  <main id="hero" class="hero">
+    <div class="slider" id="slider" aria-roledescription="carousel">
+
+      <!-- Slides (background images applied inline for easy swapping) -->
+      <div class="slide" style="background-image: url('assets/slide1.jpg')" data-index="0" aria-hidden="false"></div>
+      <div class="slide" style="background-image: url('assets/slide2.jpg')" data-index="1" aria-hidden="true"></div>
+      <div class="slide" style="background-image: url('assets/slide3.jpg')" data-index="2" aria-hidden="true"></div>
+
+      <!-- subtle gold overlay / dust -->
+      <div class="gold-overlay" aria-hidden="true"></div>
+      <div class="vignette" aria-hidden="true"></div>
+
+      <!-- Centered content -->
+      <div class="hero-content" role="region" aria-label="LuxeMart intro">
+        <div class="brand">
+          <h1 class="logo">LUXEMART</h1>
+          <p class="slogan">Luxury Made Simple.</p>
+        </div>
+
+        <div class="cta-wrap">
+          <a href="/home.html" class="btn btn-primary" id="continueBtn">Continue to LuxeMart</a>
+
+          <div class="links">
+            <a href="/login.html" class="link-small">Already have an account? Log in</a>
+            <span class="sep">•</span>
+            <a href="/signup.html" class="link-small">Create a new account</a>
+          </div>
+
+          <div class="socials">
+            <button class="social-btn" id="googleBtn" aria-label="Continue with Google">Continue with Google</button>
+            <button class="social-btn" id="appleBtn" aria-label="Continue with Apple">Continue with Apple</button>
+            <button class="social-btn" id="fbBtn" aria-label="Continue with Facebook">Facebook</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- pagination dots -->
+      <div class="dots" id="dots" role="tablist" aria-label="Slide navigation"></div>
+
+      <!-- scroll hint -->
+      <div class="scroll-hint" aria-hidden="true">
+        <span>Enter Store</span>
+        <div class="arrow"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
